@@ -19,3 +19,19 @@ function fetchData(){
 
     })
 }
+
+document.getElementById('like-button').addEventListener('click',function addLikes(e){
+    e.preventDefault() 
+    let likes = document.getElementById('like-count')
+    let liked=likes.innerText.split(' ')
+    let number =  parseInt(liked[0])
+    number = number + 1
+    likes.innerText= number + ' ' +'likes'
+    
+
+    
+
+    
+    
+
+})
